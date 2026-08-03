@@ -1,1 +1,1 @@
-Vercel Link : npx plugins add vercel/vercel-plugin
+Vercel Link : https://tasks-1ravl6stp-metha-stackly1.vercel.app/
