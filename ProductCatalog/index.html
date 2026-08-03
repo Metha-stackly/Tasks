@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Catalog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            🛍️ Product Catalog
+        </div>
+    </nav>
+
+    <div class="search-container">
+        <input
+            type="text"
+            id="searchProduct"
+            placeholder="Search Product">
+    </div>
+
+
+
+<div class="controls">
+    <div class="filter-container">
+        <label>Category</label>
+
+        <select id="categoryFilter">
+            <option value="All">All</option>
+            <option value="Electronics">Electronics</option>
+            <option value="Clothing">Clothing</option>
+            <option value="Accessories">Accessories</option>
+            <option value="Footwear">Footwear</option>
+            <option value="Home">Home</option>
+        </select>
+    </div>
+
+    <div class="sort-container">
+        <label>Sort Price</label>
+
+        <select id="sortPrice">
+            <option value="default">Select</option>
+            <option value="asc">Low to High</option>
+            <option value="desc">High to Low</option>
+        </select>
+    </div>
+    </div>
+
+    <table>
+
+        <thead>
+
+            <tr>
+                <th>Product ID</th>
+                <th>Product Name</th>
+                <th>Category</th>
+                <th>Price</th>
+            </tr>
+
+        </thead>
+
+        <tbody id="productTableBody">
+
+        </tbody>
+
+    </table>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
