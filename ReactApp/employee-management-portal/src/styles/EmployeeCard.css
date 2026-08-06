@@ -1,0 +1,93 @@
+.employee-card{
+
+    background:white;
+
+    padding:20px;
+
+    border-radius:12px;
+
+    margin-bottom:20px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.employee-card:hover{
+
+    transform:translateY(-4px);
+
+}
+
+.employee-info h2{
+
+    margin-bottom:8px;
+
+}
+
+.employee-info p{
+
+    color:#6b7280;
+
+    margin:5px 0;
+
+}
+
+.employee-buttons{
+
+    display:flex;
+
+    gap:10px;
+
+}
+
+.view-btn{
+
+    background:#2563eb;
+
+    color:white;
+
+    border:none;
+
+    padding:10px 18px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+}
+
+.delete-btn{
+
+    background:#dc2626;
+
+    color:white;
+
+    border:none;
+
+    padding:10px 18px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+}
+
+.view-btn:hover{
+
+    background:#1d4ed8;
+
+}
+
+.delete-btn:hover{
+
+    background:#b91c1c;
+
+}

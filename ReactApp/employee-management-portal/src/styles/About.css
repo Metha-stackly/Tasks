@@ -1,0 +1,41 @@
+.about{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:15px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.about h1{
+
+    margin-bottom:20px;
+
+}
+
+.about h2{
+
+    margin-top:25px;
+
+    color:#2563eb;
+
+}
+
+.about p{
+
+    margin-top:8px;
+
+    color:#555;
+
+}
+
+.about ul{
+
+    margin-top:10px;
+
+    margin-left:20px;
+
+}

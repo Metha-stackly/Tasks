@@ -1,0 +1,27 @@
+.search-container{
+
+    margin:25px 0;
+
+}
+
+.search-container input{
+
+    width:100%;
+
+    padding:14px;
+
+    border-radius:10px;
+
+    border:2px solid #d1d5db;
+
+    outline:none;
+
+    font-size:16px;
+
+}
+
+.search-container input:focus{
+
+    border-color:#2563eb;
+
+}

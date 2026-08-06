@@ -1,0 +1,55 @@
+.navbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 60px;
+
+    background:linear-gradient(135deg,#2563eb,#1d4ed8);
+
+    box-shadow:0 3px 12px rgba(0,0,0,.15);
+
+}
+
+.navbar h2{
+
+    color:white;
+
+}
+
+.navbar ul{
+
+    list-style:none;
+
+    display:flex;
+
+    gap:30px;
+
+}
+
+.navbar a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.navbar a:hover{
+
+    color:#fde047;
+
+}
+
+.navbar a.active{
+
+    color:#fde047;
+
+}
