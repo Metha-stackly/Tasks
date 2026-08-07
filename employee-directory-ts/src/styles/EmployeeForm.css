@@ -1,0 +1,62 @@
+.employee-form{
+
+display:flex;
+
+flex-direction:column;
+
+gap:15px;
+
+background:white;
+
+padding:25px;
+
+border-radius:10px;
+
+box-shadow:0 2px 8px rgba(0,0,0,.1);
+
+}
+
+.employee-form input,
+.employee-form select{
+
+padding:12px;
+
+font-size:16px;
+
+border:1px solid #ccc;
+
+border-radius:8px;
+
+}
+
+.buttons{
+
+display:flex;
+
+gap:15px;
+
+}
+
+.buttons button{
+
+padding:12px 18px;
+
+border:none;
+
+border-radius:8px;
+
+cursor:pointer;
+
+background:#2563eb;
+
+color:white;
+
+font-size:16px;
+
+}
+
+.buttons button:last-child{
+
+background:#6b7280;
+
+}

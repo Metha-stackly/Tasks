@@ -1,0 +1,43 @@
+.navbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:15px 40px;
+
+    background:#2563eb;
+
+}
+
+.navbar h2{
+
+    color:white;
+
+}
+
+.nav-links{
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+.nav-links a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+}
+
+.nav-links a:hover{
+
+    text-decoration:underline;
+
+}

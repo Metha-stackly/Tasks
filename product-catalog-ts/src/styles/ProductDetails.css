@@ -1,0 +1,39 @@
+.product-details{
+
+    width:600px;
+
+    margin:30px auto;
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:10px;
+
+    box-shadow:0 2px 8px rgba(0,0,0,.1);
+
+}
+
+.product-details img{
+
+    width:100%;
+
+    border-radius:10px;
+
+    margin-bottom:20px;
+
+}
+
+.product-details h1{
+
+    color:#2563eb;
+
+    margin-bottom:10px;
+
+}
+
+.product-details p{
+
+    margin:10px 0;
+
+}
