@@ -1,0 +1,33 @@
+.favorite-button {
+  padding: 9px 12px;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  color: #e2e8f0;
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  border-radius: 7px;
+
+  cursor: pointer;
+
+  font-size: 13px;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.favorite-button:hover {
+  background: rgba(255, 255, 255, 0.15);
+
+  transform: translateY(-2px);
+}
+
+.favorite-active {
+  background: #be123c;
+
+  border-color: #be123c;
+
+  color: white;
+}

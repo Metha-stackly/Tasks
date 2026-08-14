@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "leaveType": "Annual Leave",
+    "days": 30,
+    "status": "Active"
+  },
+  {
+    "id": 2,
+    "leaveType": "Sick Leave",
+    "days": 12,
+    "status": "Active"
+  },
+  {
+    "id": 3,
+    "leaveType": "Casual Leave",
+    "days": 10,
+    "status": "Active"
+  },
+  {
+    "id": 4,
+    "leaveType": "Maternity Leave",
+    "days": 90,
+    "status": "Active"
+  },
+  {
+    "id": 5,
+    "leaveType": "Paternity Leave",
+    "days": 15,
+    "status": "Active"
+  }
+]

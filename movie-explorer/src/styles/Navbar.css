@@ -1,0 +1,146 @@
+/* ================================
+   NAVBAR
+================================ */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  width: 100%;
+
+  background: rgba(8, 11, 22, 0.88);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+.navbar-container {
+  width: min(1400px, 92%);
+  min-height: 76px;
+
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 30px;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  color: #ffffff;
+
+  font-size: 1.2rem;
+  font-weight: 800;
+  letter-spacing: -0.3px;
+
+  transition: opacity 0.25s ease;
+}
+
+.navbar-logo:hover {
+  opacity: 0.85;
+}
+
+.logo-icon {
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+
+  background: linear-gradient(
+    135deg,
+    #3b82f6,
+    #7c3aed
+  );
+
+  color: #ffffff;
+
+  font-size: 13px;
+
+  box-shadow:
+    0 8px 25px rgba(59, 130, 246, 0.25);
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-link {
+  position: relative;
+
+  padding: 10px 16px;
+
+  color: #aeb6ca;
+
+  font-size: 0.95rem;
+  font-weight: 600;
+
+  border-radius: 10px;
+
+  transition:
+    color 0.25s ease,
+    background 0.25s ease;
+}
+
+.nav-link:hover {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.nav-link.active {
+  color: #ffffff;
+  background: rgba(99, 102, 241, 0.16);
+}
+
+.nav-link.active::after {
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+  bottom: 3px;
+
+  width: 18px;
+  height: 3px;
+
+  transform: translateX(-50%);
+
+  border-radius: 999px;
+
+  background: linear-gradient(
+    90deg,
+    #3b82f6,
+    #8b5cf6
+  );
+}
+
+@media (max-width: 650px) {
+  .navbar-container {
+    min-height: 68px;
+  }
+
+  .navbar-logo span:last-child {
+    display: none;
+  }
+
+  .navbar-links {
+    gap: 2px;
+  }
+
+  .nav-link {
+    padding: 9px 10px;
+    font-size: 0.85rem;
+  }
+}

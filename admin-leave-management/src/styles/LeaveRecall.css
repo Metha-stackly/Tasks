@@ -1,0 +1,161 @@
+.leave-recall {
+  width: 100%;
+}
+
+.recall-card {
+  width: 100%;
+
+  background: #ffffff;
+
+  border: 1px solid #dce4ef;
+  border-radius: 7px;
+
+  overflow: hidden;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.recall-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 17px 20px;
+
+  border-bottom: 1px solid #e4e9f1;
+}
+
+.recall-card-header h2 {
+  margin: 0 0 4px;
+
+  color: #17213c;
+
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.recall-card-header p {
+  margin: 0;
+
+  color: #8a94a8;
+
+  font-size: 10px;
+}
+
+/* =========================
+   TABLE
+========================= */
+
+.recall-table-wrapper {
+  width: 100%;
+
+  overflow-x: auto;
+}
+
+.recall-table {
+  width: 100%;
+
+  border-collapse: collapse;
+
+  min-width: 850px;
+}
+
+.recall-table th {
+  height: 42px;
+
+  padding: 0 18px;
+
+  background: #f5f7fb;
+
+  border-bottom: 1px solid #e0e6ef;
+
+  color: #66718a;
+
+  text-align: left;
+
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.recall-table td {
+  height: 50px;
+
+  padding: 0 18px;
+
+  border-bottom: 1px solid #edf0f5;
+
+  color: #3c465d;
+
+  font-size: 10px;
+}
+
+.recall-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.recall-table tbody tr:hover {
+  background: #fafbfe;
+}
+
+/* =========================
+   STATUS
+========================= */
+
+.recall-status {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 4px 10px;
+
+  border-radius: 12px;
+
+  background: #e3f7eb;
+
+  color: #198754;
+
+  font-size: 9px;
+  font-weight: 600;
+}
+
+/* =========================
+   RECALL BUTTON
+========================= */
+
+.recall-button {
+  min-width: 58px;
+
+  height: 27px;
+
+  padding: 0 10px;
+
+  border: 1px solid #e3b000;
+  border-radius: 4px;
+
+  background: #ffc400;
+
+  color: #17213c;
+
+  font-size: 9px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.recall-button:hover {
+  background: #e8ae00;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 700px) {
+  .recall-table th,
+  .recall-table td {
+    padding: 0 12px;
+  }
+}

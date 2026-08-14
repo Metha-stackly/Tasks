@@ -1,0 +1,9 @@
+.app {
+  min-height: 100vh;
+  background: #e8f1fc;
+}
+
+.main-content {
+  margin-left: 235px;
+  min-height: 100vh;
+}

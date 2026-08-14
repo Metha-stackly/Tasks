@@ -1,0 +1,106 @@
+.home-page {
+  min-height: calc(100vh - 70px);
+
+  max-width: 1400px;
+
+  margin: 0 auto;
+
+  padding: 60px 50px;
+}
+
+.hero-section {
+  text-align: center;
+
+  padding: 70px 20px 100px;
+
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(37, 99, 235, 0.18),
+      transparent 55%
+    );
+}
+
+.hero-section h1 {
+  margin: 0;
+
+  font-size: clamp(48px, 7vw, 80px);
+
+  font-weight: 800;
+
+  letter-spacing: -2px;
+
+  background: linear-gradient(
+    90deg,
+    #60a5fa,
+    #a78bfa
+  );
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-section p {
+  max-width: 650px;
+
+  margin: 20px auto 35px;
+
+  color: #94a3b8;
+
+  font-size: 18px;
+
+  line-height: 1.7;
+}
+
+.explore-button {
+  display: inline-block;
+
+  padding: 14px 28px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #2563eb,
+      #7c3aed
+    );
+
+  color: white;
+
+  text-decoration: none;
+
+  border-radius: 8px;
+
+  font-weight: 700;
+
+  box-shadow:
+    0 10px 30px
+    rgba(37, 99, 235, 0.3);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.explore-button:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 15px 40px
+    rgba(37, 99, 235, 0.45);
+}
+
+.featured-section h2 {
+  margin-bottom: 25px;
+
+  font-size: 30px;
+}
+
+.featured-movies {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fill, minmax(220px, 1fr));
+
+  gap: 24px;
+}

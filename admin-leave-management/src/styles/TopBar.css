@@ -1,0 +1,181 @@
+.top-bar {
+  width: 100%;
+
+  height: 62px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 0 24px;
+
+  background: transparent;
+}
+
+/* -------------------------
+   MENU BUTTON
+------------------------- */
+
+.menu-button {
+  width: 38px;
+  height: 38px;
+
+  border: none;
+  background: transparent;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 22px;
+
+  color: #111111;
+
+  cursor: pointer;
+}
+
+/* -------------------------
+   CANDIDATE SELECT
+------------------------- */
+
+.candidate-select {
+  width: 125px;
+  height: 35px;
+
+  border: none;
+  border-radius: 5px 0 0 5px;
+
+  background: #243f91;
+  color: #ffffff;
+
+  padding: 0 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-size: 10px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.candidate-arrow {
+  font-size: 10px;
+}
+
+/* -------------------------
+   SEARCH
+------------------------- */
+
+.top-search {
+  width: 245px;
+  height: 35px;
+
+  background: #ffffff;
+
+  border-radius: 0 5px 5px 0;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 12px;
+
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+.top-search input {
+  width: 100%;
+  height: 100%;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  font-size: 11px;
+
+  color: #333333;
+}
+
+.top-search input::placeholder {
+  color: #9ca3af;
+}
+
+.search-icon {
+  font-size: 13px;
+  color: #a1a7b5;
+}
+
+/* -------------------------
+   RIGHT ACTIONS
+------------------------- */
+
+.top-actions {
+  margin-left: auto;
+
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+}
+
+.top-action {
+  position: relative;
+
+  width: 34px;
+  height: 34px;
+
+  border: none;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  font-size: 14px;
+}
+
+.notification {
+  background: #253f91;
+}
+
+.key-action {
+  background: #ffc400;
+}
+
+.mail-action {
+  background: #ffffff;
+
+  border: 1px solid #d9e0eb;
+}
+
+/* -------------------------
+   BADGES
+------------------------- */
+
+.notification-badge,
+.mail-badge {
+  position: absolute;
+
+  top: -2px;
+  right: -2px;
+
+  width: 11px;
+  height: 11px;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ff2525;
+  color: #ffffff;
+
+  font-size: 7px;
+  font-weight: 700;
+}

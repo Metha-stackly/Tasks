@@ -1,0 +1,31 @@
+.filter-container {
+  display: flex;
+
+  gap: 12px;
+
+  margin-top: 20px;
+
+  flex-wrap: wrap;
+}
+
+.filter-container select {
+  padding: 12px 15px;
+
+  min-width: 190px;
+
+  background: #111827;
+
+  color: #e2e8f0;
+
+  border: 1px solid #334155;
+
+  border-radius: 8px;
+
+  outline: none;
+
+  cursor: pointer;
+}
+
+.filter-container select:focus {
+  border-color: #3b82f6;
+}

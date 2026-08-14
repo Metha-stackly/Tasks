@@ -1,0 +1,11 @@
+.error-message {
+  padding: 50px;
+
+  text-align: center;
+
+  color: #f87171;
+
+  font-size: 20px;
+
+  font-weight: 600;
+}

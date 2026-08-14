@@ -1,0 +1,81 @@
+.leave-management-page {
+  min-height: 100vh;
+  background: #e8f1fc;
+  color: #17213c;
+}
+
+.leave-management-content {
+  padding: 10px 28px 40px;
+}
+
+/* Header */
+
+.leave-page-header {
+  margin: 4px 0 18px;
+}
+
+.leave-page-header h1 {
+  margin: 0;
+
+  color: #17213c;
+
+  font-size: 23px;
+  font-weight: 700;
+}
+
+/* Tabs */
+
+.leave-tabs {
+  display: flex;
+  align-items: center;
+
+  gap: 4px;
+
+  border-bottom: 1px solid #d6dfed;
+
+  margin-bottom: 18px;
+}
+
+.leave-tab {
+  position: relative;
+
+  border: none;
+  background: transparent;
+
+  padding: 11px 20px;
+
+  color: #6d7891;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.leave-tab:hover {
+  color: #243f91;
+}
+
+.leave-tab.active {
+  color: #243f91;
+}
+
+.leave-tab.active::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: -1px;
+
+  height: 3px;
+
+  background: #ffc400;
+
+  border-radius: 3px 3px 0 0;
+}
+
+.leave-tab-content {
+  width: 100%;
+}

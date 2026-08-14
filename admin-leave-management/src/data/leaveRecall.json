@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "employeeName": "John Doe",
+    "leaveType": "Annual Leave",
+    "fromDate": "12 Aug 2026",
+    "toDate": "18 Aug 2026",
+    "days": 7,
+    "status": "Approved"
+  },
+  {
+    "id": 2,
+    "employeeName": "Sarah Williams",
+    "leaveType": "Sick Leave",
+    "fromDate": "14 Aug 2026",
+    "toDate": "16 Aug 2026",
+    "days": 3,
+    "status": "Approved"
+  },
+  {
+    "id": 3,
+    "employeeName": "Michael Brown",
+    "leaveType": "Annual Leave",
+    "fromDate": "20 Aug 2026",
+    "toDate": "25 Aug 2026",
+    "days": 6,
+    "status": "Approved"
+  },
+  {
+    "id": 4,
+    "employeeName": "Emily Davis",
+    "leaveType": "Casual Leave",
+    "fromDate": "18 Aug 2026",
+    "toDate": "20 Aug 2026",
+    "days": 3,
+    "status": "Approved"
+  },
+  {
+    "id": 5,
+    "employeeName": "Robert Wilson",
+    "leaveType": "Annual Leave",
+    "fromDate": "22 Aug 2026",
+    "toDate": "30 Aug 2026",
+    "days": 9,
+    "status": "Approved"
+  }
+]
