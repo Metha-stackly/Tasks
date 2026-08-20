@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 import "../styles/Sidebar.css";
 
 function Sidebar() {
@@ -34,18 +36,35 @@ function Sidebar() {
           Features
         </div>
 
-        <div className="sidebar-item">
-          <span className="sidebar-icon">▣</span>
+        <NavLink
+          to="/dashboard"
+          className={({ isActive }) =>
+            `sidebar-item ${
+              isActive ? "active" : ""
+            }`
+          }
+        >
+          <span className="sidebar-icon">
+            ▣
+          </span>
+
           <span>Dashboard</span>
-          <span className="notification-dot">0</span>
 
-          
-        </div>
+          {/* <span className="notification-dot">
+            0
+          </span> */}
+        </NavLink>
 
         <div className="sidebar-item">
-          <span className="sidebar-icon">✉</span>
+          <span className="sidebar-icon">
+            ✉
+          </span>
+
           <span>Messages</span>
-          <span className="notification-dot">0</span>
+
+          <span className="notification-dot">
+            0
+          </span>
         </div>
 
       </div>
@@ -58,17 +77,26 @@ function Sidebar() {
         </div>
 
         <div className="sidebar-item">
-          <span className="sidebar-icon">▣</span>
+          <span className="sidebar-icon">
+            ▣
+          </span>
+
           <span>Jobs</span>
         </div>
 
         <div className="sidebar-item">
-          <span className="sidebar-icon">♟</span>
+          <span className="sidebar-icon">
+            ♟
+          </span>
+
           <span>Candidates</span>
         </div>
 
         <div className="sidebar-item">
-          <span className="sidebar-icon">▤</span>
+          <span className="sidebar-icon">
+            ▤
+          </span>
+
           <span>Resumes</span>
         </div>
 
@@ -81,19 +109,43 @@ function Sidebar() {
           Organization
         </div>
 
-        <div className="sidebar-item">
-          <span className="sidebar-icon">♙</span>
+        {/* Employee Management */}
+        <NavLink
+          to="/employees"
+          className={({ isActive }) =>
+            `sidebar-item ${
+              isActive ? "active" : ""
+            }`
+          }
+        >
+          <span className="sidebar-icon">
+            ♙
+          </span>
+
           <span>Employee Management</span>
-        </div>
+        </NavLink>
 
-        {/* ACTIVE */}
-        <div className="sidebar-item active">
-          <span className="sidebar-icon">▣</span>
+        {/* Leave Management */}
+        <NavLink
+          to="/leave-management"
+          className={({ isActive }) =>
+            `sidebar-item ${
+              isActive ? "active" : ""
+            }`
+          }
+        >
+          <span className="sidebar-icon">
+            ▣
+          </span>
+
           <span>Leave Management</span>
-        </div>
+        </NavLink>
 
         <div className="sidebar-item">
-          <span className="sidebar-icon">▤</span>
+          <span className="sidebar-icon">
+            ▤
+          </span>
+
           <span>Performance Management</span>
         </div>
 
@@ -107,14 +159,20 @@ function Sidebar() {
         </div>
 
         <div className="sidebar-item">
-          <span className="sidebar-icon">▤</span>
+          <span className="sidebar-icon">
+            ▤
+          </span>
+
           <span>Payroll Management</span>
         </div>
 
       </div>
 
       {/* Logout */}
-      <button className="logout-button">
+      <button
+        type="button"
+        className="logout-button"
+      >
         <span>⏻</span>
         <span>Log Out</span>
       </button>

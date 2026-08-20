@@ -1,0 +1,1217 @@
+[
+  {
+    "id": 1,
+    "name": "Arun Kumar",
+    "personal": {
+      "dateOfBirth": "14 June 1998",
+      "gender": "Male",
+      "maritalStatus": "Single",
+      "nationality": "Indian",
+      "bloodGroup": "B+",
+      "address": "12 Anna Nagar East, Chennai, Tamil Nadu"
+    },
+    "contact": {
+      "email": "arun.kumar01@example.com",
+      "phone": "+91 90001 10001",
+      "alternatePhone": "+91 90001 20001",
+      "address": "12 Anna Nagar East, Chennai, Tamil Nadu",
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "postalCode": "600102"
+    },
+    "nextOfKin": {
+      "name": "Ramesh Kumar",
+      "relationship": "Father",
+      "phone": "+91 90001 30001",
+      "email": "ramesh.kumar@example.com",
+      "address": "12 Anna Nagar East, Chennai, Tamil Nadu"
+    },
+    "education": {
+      "qualification": "Bachelor of Engineering",
+      "specialization": "Computer Science",
+      "institution": "Anna University",
+      "yearOfCompletion": "2023",
+      "grade": "8.4 CGPA",
+      "type": "Full Time"
+    },
+    "family": [
+      {
+        "name": "Ramesh Kumar",
+        "relationship": "Father",
+        "occupation": "Business Owner",
+        "phone": "+91 90001 30001"
+      },
+      {
+        "name": "Lakshmi Kumar",
+        "relationship": "Mother",
+        "occupation": "Teacher",
+        "phone": "+91 90001 30002"
+      },
+      {
+        "name": "Kavya Kumar",
+        "relationship": "Sister",
+        "occupation": "Software Engineer",
+        "phone": "+91 90001 30003"
+      }
+    ],
+    "guarantor": {
+      "name": "Ramesh Kumar",
+      "relationship": "Father",
+      "phone": "+91 90001 30001",
+      "occupation": "Business Owner",
+      "address": "12 Anna Nagar East, Chennai, Tamil Nadu"
+    },
+    "job": {
+      "department": "Engineering",
+      "jobTitle": "Software Developer",
+      "category": "Full Time",
+      "employeeId": "EMP001",
+      "startDate": "12 February 2024",
+      "workLocation": "Chennai",
+      "manager": "Vijay Raman",
+      "employmentStatus": "Active"
+    },
+    "financial": {
+      "bankName": "HDFC Bank",
+      "accountNumber": "XXXXXX1001",
+      "ifscCode": "HDFC0001001",
+      "accountType": "Salary Account",
+      "panNumber": "ABCDE1001F",
+      "paymentMode": "Bank Transfer"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Priya Krishnan",
+    "personal": {
+      "dateOfBirth": "23 September 1997",
+      "gender": "Female",
+      "maritalStatus": "Married",
+      "nationality": "Indian",
+      "bloodGroup": "O+",
+      "address": "45 Velachery Main Road, Chennai, Tamil Nadu"
+    },
+    "contact": {
+      "email": "priya.krishnan02@example.com",
+      "phone": "+91 90002 10002",
+      "alternatePhone": "+91 90002 20002",
+      "address": "45 Velachery Main Road, Chennai, Tamil Nadu",
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "postalCode": "600042"
+    },
+    "nextOfKin": {
+      "name": "Rahul Krishnan",
+      "relationship": "Husband",
+      "phone": "+91 90002 30002",
+      "email": "rahul.krishnan@example.com",
+      "address": "45 Velachery Main Road, Chennai, Tamil Nadu"
+    },
+    "education": {
+      "qualification": "Bachelor of Design",
+      "specialization": "Visual Communication",
+      "institution": "Loyola College",
+      "yearOfCompletion": "2022",
+      "grade": "8.7 CGPA",
+      "type": "Full Time"
+    },
+    "family": [
+      {
+        "name": "Rahul Krishnan",
+        "relationship": "Husband",
+        "occupation": "Architect",
+        "phone": "+91 90002 30002"
+      },
+      {
+        "name": "Saraswathi Krishnan",
+        "relationship": "Mother",
+        "occupation": "Retired Teacher",
+        "phone": "+91 90002 30003"
+      },
+      {
+        "name": "Nithin Krishnan",
+        "relationship": "Brother",
+        "occupation": "Accountant",
+        "phone": "+91 90002 30004"
+      }
+    ],
+    "guarantor": {
+      "name": "Saraswathi Krishnan",
+      "relationship": "Mother",
+      "phone": "+91 90002 30003",
+      "occupation": "Retired Teacher",
+      "address": "45 Velachery Main Road, Chennai, Tamil Nadu"
+    },
+    "job": {
+      "department": "Design & Marketing",
+      "jobTitle": "UI / UX Designer",
+      "category": "Full Time",
+      "employeeId": "EMP002",
+      "startDate": "05 March 2024",
+      "workLocation": "Chennai",
+      "manager": "Meera Joseph",
+      "employmentStatus": "Active"
+    },
+    "financial": {
+      "bankName": "ICICI Bank",
+      "accountNumber": "XXXXXX1002",
+      "ifscCode": "ICIC0001002",
+      "accountType": "Salary Account",
+      "panNumber": "ABCDE1002G",
+      "paymentMode": "Bank Transfer"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Karthik Suresh",
+    "personal": {
+      "dateOfBirth": "08 January 1996",
+      "gender": "Male",
+      "maritalStatus": "Single",
+      "nationality": "Indian",
+      "bloodGroup": "A+",
+      "address": "27 Saibaba Colony, Coimbatore, Tamil Nadu"
+    },
+    "contact": {
+      "email": "karthik.suresh03@example.com",
+      "phone": "+91 90003 10003",
+      "alternatePhone": "+91 90003 20003",
+      "address": "27 Saibaba Colony, Coimbatore, Tamil Nadu",
+      "city": "Coimbatore",
+      "state": "Tamil Nadu",
+      "postalCode": "641011"
+    },
+    "nextOfKin": {
+      "name": "Suresh Babu",
+      "relationship": "Father",
+      "phone": "+91 90003 30003",
+      "email": "suresh.babu@example.com",
+      "address": "27 Saibaba Colony, Coimbatore, Tamil Nadu"
+    },
+    "education": {
+      "qualification": "Bachelor of Technology",
+      "specialization": "Information Technology",
+      "institution": "Vellore Institute of Technology",
+      "yearOfCompletion": "2022",
+      "grade": "8.2 CGPA",
+      "type": "Full Time"
+    },
+    "family": [
+      {
+        "name": "Suresh Babu",
+        "relationship": "Father",
+        "occupation": "Bank Manager",
+        "phone": "+91 90003 30003"
+      },
+      {
+        "name": "Geetha Suresh",
+        "relationship": "Mother",
+        "occupation": "Homemaker",
+        "phone": "+91 90003 30004"
+      },
+      {
+        "name": "Deepak Suresh",
+        "relationship": "Brother",
+        "occupation": "Civil Engineer",
+        "phone": "+91 90003 30005"
+      }
+    ],
+    "guarantor": {
+      "name": "Suresh Babu",
+      "relationship": "Father",
+      "phone": "+91 90003 30003",
+      "occupation": "Bank Manager",
+      "address": "27 Saibaba Colony, Coimbatore, Tamil Nadu"
+    },
+    "job": {
+      "department": "Engineering",
+      "jobTitle": "Backend Developer",
+      "category": "Full Time",
+      "employeeId": "EMP003",
+      "startDate": "18 April 2023",
+      "workLocation": "Coimbatore",
+      "manager": "Rajesh Menon",
+      "employmentStatus": "Active"
+    },
+    "financial": {
+      "bankName": "Axis Bank",
+      "accountNumber": "XXXXXX1003",
+      "ifscCode": "UTIB0001003",
+      "accountType": "Salary Account",
+      "panNumber": "ABCDE1003H",
+      "paymentMode": "Bank Transfer"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Meena Lakshmi",
+    "personal": {
+      "dateOfBirth": "17 March 1995",
+      "gender": "Female",
+      "maritalStatus": "Married",
+      "nationality": "Indian",
+      "bloodGroup": "B-",
+      "address": "8 KK Nagar West, Madurai, Tamil Nadu"
+    },
+    "contact": {
+      "email": "meena.lakshmi04@example.com",
+      "phone": "+91 90004 10004",
+      "alternatePhone": "+91 90004 20004",
+      "address": "8 KK Nagar West, Madurai, Tamil Nadu",
+      "city": "Madurai",
+      "state": "Tamil Nadu",
+      "postalCode": "625020"
+    },
+    "nextOfKin": {
+      "name": "Ravi Lakshmi",
+      "relationship": "Husband",
+      "phone": "+91 90004 30004",
+      "email": "ravi.lakshmi@example.com",
+      "address": "8 KK Nagar West, Madurai, Tamil Nadu"
+    },
+    "education": {
+      "qualification": "Master of Business Administration",
+      "specialization": "Human Resource Management",
+      "institution": "Bharathiar University",
+      "yearOfCompletion": "2023",
+      "grade": "8.1 CGPA",
+      "type": "Full Time"
+    },
+    "family": [
+      {
+        "name": "Ravi Lakshmi",
+        "relationship": "Husband",
+        "occupation": "Sales Manager",
+        "phone": "+91 90004 30004"
+      },
+      {
+        "name": "Parvathi Lakshmi",
+        "relationship": "Mother",
+        "occupation": "Homemaker",
+        "phone": "+91 90004 30005"
+      },
+      {
+        "name": "Ajay Lakshmi",
+        "relationship": "Son",
+        "occupation": "Student",
+        "phone": "+91 90004 30006"
+      }
+    ],
+    "guarantor": {
+      "name": "Ravi Lakshmi",
+      "relationship": "Husband",
+      "phone": "+91 90004 30004",
+      "occupation": "Sales Manager",
+      "address": "8 KK Nagar West, Madurai, Tamil Nadu"
+    },
+    "job": {
+      "department": "Human Resources",
+      "jobTitle": "HR Executive",
+      "category": "Full Time",
+      "employeeId": "EMP004",
+      "startDate": "22 January 2024",
+      "workLocation": "Madurai",
+      "manager": "Anitha Rao",
+      "employmentStatus": "Active"
+    },
+    "financial": {
+      "bankName": "State Bank of India",
+      "accountNumber": "XXXXXX1004",
+      "ifscCode": "SBIN0001004",
+      "accountType": "Salary Account",
+      "panNumber": "ABCDE1004J",
+      "paymentMode": "Bank Transfer"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Sanjay Narayanan",
+    "personal": {
+      "dateOfBirth": "29 November 1994",
+      "gender": "Male",
+      "maritalStatus": "Married",
+      "nationality": "Indian",
+      "bloodGroup": "O-",
+      "address": "16 Adyar South Street, Chennai, Tamil Nadu"
+    },
+    "contact": {
+      "email": "sanjay.narayanan05@example.com",
+      "phone": "+91 90005 10005",
+      "alternatePhone": "+91 90005 20005",
+      "address": "16 Adyar South Street, Chennai, Tamil Nadu",
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "postalCode": "600020"
+    },
+    "nextOfKin": {
+      "name": "Anita Sanjay",
+      "relationship": "Wife",
+      "phone": "+91 90005 30005",
+      "email": "anita.sanjay@example.com",
+      "address": "16 Adyar South Street, Chennai, Tamil Nadu"
+    },
+    "education": {
+      "qualification": "Bachelor of Commerce",
+      "specialization": "Accounting and Finance",
+      "institution": "Madras Christian College",
+      "yearOfCompletion": "2021",
+      "grade": "78%",
+      "type": "Full Time"
+    },
+    "family": [
+      {
+        "name": "Anita Sanjay",
+        "relationship": "Wife",
+        "occupation": "Lecturer",
+        "phone": "+91 90005 30005"
+      },
+      {
+        "name": "Narayanan Iyer",
+        "relationship": "Father",
+        "occupation": "Retired Accountant",
+        "phone": "+91 90005 30006"
+      },
+      {
+        "name": "Riya Sanjay",
+        "relationship": "Daughter",
+        "occupation": "Student",
+        "phone": "+91 90005 30007"
+      }
+    ],
+    "guarantor": {
+      "name": "Narayanan Iyer",
+      "relationship": "Father",
+      "phone": "+91 90005 30006",
+      "occupation": "Retired Accountant",
+      "address": "16 Adyar South Street, Chennai, Tamil Nadu"
+    },
+    "job": {
+      "department": "Finance",
+      "jobTitle": "Financial Analyst",
+      "category": "Full Time",
+      "employeeId": "EMP005",
+      "startDate": "15 July 2023",
+      "workLocation": "Chennai",
+      "manager": "Suresh Rao",
+      "employmentStatus": "Active"
+    },
+    "financial": {
+      "bankName": "Kotak Mahindra Bank",
+      "accountNumber": "XXXXXX1005",
+      "ifscCode": "KKBK0001005",
+      "accountType": "Salary Account",
+      "panNumber": "ABCDE1005K",
+      "paymentMode": "Bank Transfer"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Vignesh Rajan",
+    "personal": {
+      "dateOfBirth": "11 May 1997",
+      "gender": "Male",
+      "maritalStatus": "Single",
+      "nationality": "Indian",
+      "bloodGroup": "AB+",
+      "address": "33 Tambaram East, Chennai, Tamil Nadu"
+    },
+    "contact": {
+      "email": "vignesh.rajan06@example.com",
+      "phone": "+91 90006 10006",
+      "alternatePhone": "+91 90006 20006",
+      "address": "33 Tambaram East, Chennai, Tamil Nadu",
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "postalCode": "600059"
+    },
+    "nextOfKin": {
+      "name": "Rajan Murugan",
+      "relationship": "Father",
+      "phone": "+91 90006 30006",
+      "email": "rajan.murugan@example.com",
+      "address": "33 Tambaram East, Chennai, Tamil Nadu"
+    },
+    "education": {
+      "qualification": "Bachelor of Technology",
+      "specialization": "Information Technology",
+      "institution": "SRM Institute of Science and Technology",
+      "yearOfCompletion": "2023",
+      "grade": "8.1 CGPA",
+      "type": "Full Time"
+    },
+    "family": [
+      {
+        "name": "Rajan Murugan",
+        "relationship": "Father",
+        "occupation": "Government Officer",
+        "phone": "+91 90006 30006"
+      },
+      {
+        "name": "Uma Rajan",
+        "relationship": "Mother",
+        "occupation": "Accountant",
+        "phone": "+91 90006 30007"
+      },
+      {
+        "name": "Naveen Rajan",
+        "relationship": "Brother",
+        "occupation": "Student",
+        "phone": "+91 90006 30008"
+      }
+    ],
+    "guarantor": {
+      "name": "Rajan Murugan",
+      "relationship": "Father",
+      "phone": "+91 90006 30006",
+      "occupation": "Government Officer",
+      "address": "33 Tambaram East, Chennai, Tamil Nadu"
+    },
+    "job": {
+      "department": "Engineering",
+      "jobTitle": "Java Developer",
+      "category": "Full Time",
+      "employeeId": "EMP006",
+      "startDate": "10 June 2024",
+      "workLocation": "Chennai",
+      "manager": "Vijay Raman",
+      "employmentStatus": "Active"
+    },
+    "financial": {
+      "bankName": "HDFC Bank",
+      "accountNumber": "XXXXXX1006",
+      "ifscCode": "HDFC0001006",
+      "accountType": "Salary Account",
+      "panNumber": "ABCDE1006L",
+      "paymentMode": "Bank Transfer"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Divya Nair",
+    "personal": {
+      "dateOfBirth": "04 February 1996",
+      "gender": "Female",
+      "maritalStatus": "Single",
+      "nationality": "Indian",
+      "bloodGroup": "A-",
+      "address": "21 Kakkanad, Kochi, Kerala"
+    },
+    "contact": {
+      "email": "divya.nair07@example.com",
+      "phone": "+91 90007 10007",
+      "alternatePhone": "+91 90007 20007",
+      "address": "21 Kakkanad, Kochi, Kerala",
+      "city": "Kochi",
+      "state": "Kerala",
+      "postalCode": "682030"
+    },
+    "nextOfKin": {
+      "name": "Mohan Nair",
+      "relationship": "Father",
+      "phone": "+91 90007 30007",
+      "email": "mohan.nair@example.com",
+      "address": "21 Kakkanad, Kochi, Kerala"
+    },
+    "education": {
+      "qualification": "Bachelor of Business Administration",
+      "specialization": "Business Administration",
+      "institution": "University of Kerala",
+      "yearOfCompletion": "2021",
+      "grade": "82%",
+      "type": "Full Time"
+    },
+    "family": [
+      {
+        "name": "Mohan Nair",
+        "relationship": "Father",
+        "occupation": "Business Consultant",
+        "phone": "+91 90007 30007"
+      },
+      {
+        "name": "Shobha Nair",
+        "relationship": "Mother",
+        "occupation": "Teacher",
+        "phone": "+91 90007 30008"
+      },
+      {
+        "name": "Rahul Nair",
+        "relationship": "Brother",
+        "occupation": "Designer",
+        "phone": "+91 90007 30009"
+      }
+    ],
+    "guarantor": {
+      "name": "Mohan Nair",
+      "relationship": "Father",
+      "phone": "+91 90007 30007",
+      "occupation": "Business Consultant",
+      "address": "21 Kakkanad, Kochi, Kerala"
+    },
+    "job": {
+      "department": "Operations",
+      "jobTitle": "Operations Executive",
+      "category": "Full Time",
+      "employeeId": "EMP007",
+      "startDate": "08 November 2022",
+      "workLocation": "Kochi",
+      "manager": "Joseph Mathew",
+      "employmentStatus": "Active"
+    },
+    "financial": {
+      "bankName": "Federal Bank",
+      "accountNumber": "XXXXXX1007",
+      "ifscCode": "FDRL0001007",
+      "accountType": "Salary Account",
+      "panNumber": "ABCDE1007M",
+      "paymentMode": "Bank Transfer"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Suresh Babu",
+    "personal": {
+      "dateOfBirth": "16 August 1993",
+      "gender": "Male",
+      "maritalStatus": "Married",
+      "nationality": "Indian",
+      "bloodGroup": "B+",
+      "address": "9 Peelamedu, Coimbatore, Tamil Nadu"
+    },
+    "contact": {
+      "email": "suresh.babu08@example.com",
+      "phone": "+91 90008 10008",
+      "alternatePhone": "+91 90008 20008",
+      "address": "9 Peelamedu, Coimbatore, Tamil Nadu",
+      "city": "Coimbatore",
+      "state": "Tamil Nadu",
+      "postalCode": "641004"
+    },
+    "nextOfKin": {
+      "name": "Malar Suresh",
+      "relationship": "Wife",
+      "phone": "+91 90008 30008",
+      "email": "malar.suresh@example.com",
+      "address": "9 Peelamedu, Coimbatore, Tamil Nadu"
+    },
+    "education": {
+      "qualification": "Bachelor of Engineering",
+      "specialization": "Electronics and Communication",
+      "institution": "Coimbatore Institute of Technology",
+      "yearOfCompletion": "2023",
+      "grade": "8.0 CGPA",
+      "type": "Full Time"
+    },
+    "family": [
+      {
+        "name": "Malar Suresh",
+        "relationship": "Wife",
+        "occupation": "Nurse",
+        "phone": "+91 90008 30008"
+      },
+      {
+        "name": "Babu Subramaniam",
+        "relationship": "Father",
+        "occupation": "Retired Engineer",
+        "phone": "+91 90008 30009"
+      },
+      {
+        "name": "Sanjana Suresh",
+        "relationship": "Daughter",
+        "occupation": "Student",
+        "phone": "+91 90008 30010"
+      }
+    ],
+    "guarantor": {
+      "name": "Babu Subramaniam",
+      "relationship": "Father",
+      "phone": "+91 90008 30009",
+      "occupation": "Retired Engineer",
+      "address": "9 Peelamedu, Coimbatore, Tamil Nadu"
+    },
+    "job": {
+      "department": "Quality Assurance",
+      "jobTitle": "QA Automation Engineer",
+      "category": "Full Time",
+      "employeeId": "EMP008",
+      "startDate": "03 May 2024",
+      "workLocation": "Coimbatore",
+      "manager": "Karthik Raman",
+      "employmentStatus": "Active"
+    },
+    "financial": {
+      "bankName": "Canara Bank",
+      "accountNumber": "XXXXXX1008",
+      "ifscCode": "CNRB0001008",
+      "accountType": "Salary Account",
+      "panNumber": "ABCDE1008N",
+      "paymentMode": "Bank Transfer"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Anjali Menon",
+    "personal": {
+      "dateOfBirth": "27 October 1998",
+      "gender": "Female",
+      "maritalStatus": "Single",
+      "nationality": "Indian",
+      "bloodGroup": "O+",
+      "address": "14 Vyttila, Kochi, Kerala"
+    },
+    "contact": {
+      "email": "anjali.menon09@example.com",
+      "phone": "+91 90009 10009",
+      "alternatePhone": "+91 90009 20009",
+      "address": "14 Vyttila, Kochi, Kerala",
+      "city": "Kochi",
+      "state": "Kerala",
+      "postalCode": "682019"
+    },
+    "nextOfKin": {
+      "name": "Ramesh Menon",
+      "relationship": "Father",
+      "phone": "+91 90009 30009",
+      "email": "ramesh.menon@example.com",
+      "address": "14 Vyttila, Kochi, Kerala"
+    },
+    "education": {
+      "qualification": "Master of Business Administration",
+      "specialization": "Business Analytics",
+      "institution": "Amrita Vishwa Vidyapeetham",
+      "yearOfCompletion": "2022",
+      "grade": "8.6 CGPA",
+      "type": "Full Time"
+    },
+    "family": [
+      {
+        "name": "Ramesh Menon",
+        "relationship": "Father",
+        "occupation": "Company Director",
+        "phone": "+91 90009 30009"
+      },
+      {
+        "name": "Latha Menon",
+        "relationship": "Mother",
+        "occupation": "Professor",
+        "phone": "+91 90009 30010"
+      },
+      {
+        "name": "Akash Menon",
+        "relationship": "Brother",
+        "occupation": "Developer",
+        "phone": "+91 90009 30011"
+      }
+    ],
+    "guarantor": {
+      "name": "Ramesh Menon",
+      "relationship": "Father",
+      "phone": "+91 90009 30009",
+      "occupation": "Company Director",
+      "address": "14 Vyttila, Kochi, Kerala"
+    },
+    "job": {
+      "department": "Product Management",
+      "jobTitle": "Product Analyst",
+      "category": "Full Time",
+      "employeeId": "EMP009",
+      "startDate": "17 August 2023",
+      "workLocation": "Kochi",
+      "manager": "Anitha Menon",
+      "employmentStatus": "Active"
+    },
+    "financial": {
+      "bankName": "South Indian Bank",
+      "accountNumber": "XXXXXX1009",
+      "ifscCode": "SIBL0001009",
+      "accountType": "Salary Account",
+      "panNumber": "ABCDE1009P",
+      "paymentMode": "Bank Transfer"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Harish Chandran",
+    "personal": {
+      "dateOfBirth": "09 December 1992",
+      "gender": "Male",
+      "maritalStatus": "Married",
+      "nationality": "Indian",
+      "bloodGroup": "AB-",
+      "address": "7 Thiruvanmiyur, Chennai, Tamil Nadu"
+    },
+    "contact": {
+      "email": "harish.chandran10@example.com",
+      "phone": "+91 90010 10010",
+      "alternatePhone": "+91 90010 20010",
+      "address": "7 Thiruvanmiyur, Chennai, Tamil Nadu",
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "postalCode": "600041"
+    },
+    "nextOfKin": {
+      "name": "Rekha Harish",
+      "relationship": "Wife",
+      "phone": "+91 90010 30010",
+      "email": "rekha.harish@example.com",
+      "address": "7 Thiruvanmiyur, Chennai, Tamil Nadu"
+    },
+    "education": {
+      "qualification": "Bachelor of Science",
+      "specialization": "Computer Science",
+      "institution": "University of Madras",
+      "yearOfCompletion": "2021",
+      "grade": "79%",
+      "type": "Full Time"
+    },
+    "family": [
+      {
+        "name": "Rekha Harish",
+        "relationship": "Wife",
+        "occupation": "HR Manager",
+        "phone": "+91 90010 30010"
+      },
+      {
+        "name": "Chandran Krishnan",
+        "relationship": "Father",
+        "occupation": "Retired Officer",
+        "phone": "+91 90010 30011"
+      },
+      {
+        "name": "Aarav Harish",
+        "relationship": "Son",
+        "occupation": "Student",
+        "phone": "+91 90010 30012"
+      }
+    ],
+    "guarantor": {
+      "name": "Chandran Krishnan",
+      "relationship": "Father",
+      "phone": "+91 90010 30011",
+      "occupation": "Retired Officer",
+      "address": "7 Thiruvanmiyur, Chennai, Tamil Nadu"
+    },
+    "job": {
+      "department": "IT Support",
+      "jobTitle": "System Administrator",
+      "category": "Full Time",
+      "employeeId": "EMP010",
+      "startDate": "29 September 2022",
+      "workLocation": "Chennai",
+      "manager": "Prakash Kumar",
+      "employmentStatus": "Active"
+    },
+    "financial": {
+      "bankName": "IndusInd Bank",
+      "accountNumber": "XXXXXX1010",
+      "ifscCode": "INDB0001010",
+      "accountType": "Salary Account",
+      "panNumber": "ABCDE1010Q",
+      "paymentMode": "Bank Transfer"
+    }
+  },
+  {
+    "id": 11,
+    "name": "Rahul Sharma",
+    "personal": {
+      "dateOfBirth": "12 April 1997",
+      "gender": "Male",
+      "maritalStatus": "Single",
+      "nationality": "Indian",
+      "bloodGroup": "A+",
+      "address": "22 Dwarka Sector 10, New Delhi"
+    },
+    "contact": {
+      "email": "rahul.sharma11@example.com",
+      "phone": "+91 90011 10011",
+      "alternatePhone": "+91 90011 20011",
+      "address": "22 Dwarka Sector 10, New Delhi",
+      "city": "New Delhi",
+      "state": "Delhi",
+      "postalCode": "110075"
+    },
+    "nextOfKin": {
+      "name": "Mahesh Sharma",
+      "relationship": "Father",
+      "phone": "+91 90011 30011",
+      "email": "mahesh.sharma@example.com",
+      "address": "22 Dwarka Sector 10, New Delhi"
+    },
+    "education": {
+      "qualification": "Bachelor of Technology",
+      "specialization": "Computer Science and Engineering",
+      "institution": "Delhi Technological University",
+      "yearOfCompletion": "2023",
+      "grade": "8.8 CGPA",
+      "type": "Full Time"
+    },
+    "family": [
+      {
+        "name": "Mahesh Sharma",
+        "relationship": "Father",
+        "occupation": "Civil Engineer",
+        "phone": "+91 90011 30011"
+      },
+      {
+        "name": "Sunita Sharma",
+        "relationship": "Mother",
+        "occupation": "Government Teacher",
+        "phone": "+91 90011 30012"
+      },
+      {
+        "name": "Rohan Sharma",
+        "relationship": "Brother",
+        "occupation": "Student",
+        "phone": "+91 90011 30013"
+      }
+    ],
+    "guarantor": {
+      "name": "Mahesh Sharma",
+      "relationship": "Father",
+      "phone": "+91 90011 30011",
+      "occupation": "Civil Engineer",
+      "address": "22 Dwarka Sector 10, New Delhi"
+    },
+    "job": {
+      "department": "Engineering",
+      "jobTitle": "Full Stack Developer",
+      "category": "Full Time",
+      "employeeId": "EMP011",
+      "startDate": "11 March 2024",
+      "workLocation": "New Delhi",
+      "manager": "Vikram Singh",
+      "employmentStatus": "Active"
+    },
+    "financial": {
+      "bankName": "Punjab National Bank",
+      "accountNumber": "XXXXXX1011",
+      "ifscCode": "PUNB0001011",
+      "accountType": "Salary Account",
+      "panNumber": "ABCDE1011R",
+      "paymentMode": "Bank Transfer"
+    }
+  },
+  {
+    "id": 12,
+    "name": "Neha Verma",
+    "personal": {
+      "dateOfBirth": "21 July 1996",
+      "gender": "Female",
+      "maritalStatus": "Married",
+      "nationality": "Indian",
+      "bloodGroup": "B+",
+      "address": "18 Gomti Nagar, Lucknow, Uttar Pradesh"
+    },
+    "contact": {
+      "email": "neha.verma12@example.com",
+      "phone": "+91 90012 10012",
+      "alternatePhone": "+91 90012 20012",
+      "address": "18 Gomti Nagar, Lucknow, Uttar Pradesh",
+      "city": "Lucknow",
+      "state": "Uttar Pradesh",
+      "postalCode": "226010"
+    },
+    "nextOfKin": {
+      "name": "Amit Verma",
+      "relationship": "Husband",
+      "phone": "+91 90012 30012",
+      "email": "amit.verma@example.com",
+      "address": "18 Gomti Nagar, Lucknow, Uttar Pradesh"
+    },
+    "education": {
+      "qualification": "Master of Business Administration",
+      "specialization": "Human Resources",
+      "institution": "University of Delhi",
+      "yearOfCompletion": "2022",
+      "grade": "8.5 CGPA",
+      "type": "Full Time"
+    },
+    "family": [
+      {
+        "name": "Amit Verma",
+        "relationship": "Husband",
+        "occupation": "Project Manager",
+        "phone": "+91 90012 30012"
+      },
+      {
+        "name": "Rajesh Verma",
+        "relationship": "Father",
+        "occupation": "Retired Banker",
+        "phone": "+91 90012 30013"
+      },
+      {
+        "name": "Kiran Verma",
+        "relationship": "Mother",
+        "occupation": "Homemaker",
+        "phone": "+91 90012 30014"
+      }
+    ],
+    "guarantor": {
+      "name": "Rajesh Verma",
+      "relationship": "Father",
+      "phone": "+91 90012 30013",
+      "occupation": "Retired Banker",
+      "address": "18 Gomti Nagar, Lucknow, Uttar Pradesh"
+    },
+    "job": {
+      "department": "Human Resources",
+      "jobTitle": "Talent Acquisition Specialist",
+      "category": "Full Time",
+      "employeeId": "EMP012",
+      "startDate": "24 July 2023",
+      "workLocation": "Lucknow",
+      "manager": "Neeraj Kapoor",
+      "employmentStatus": "Active"
+    },
+    "financial": {
+      "bankName": "Bank of Baroda",
+      "accountNumber": "XXXXXX1012",
+      "ifscCode": "BARB0001012",
+      "accountType": "Salary Account",
+      "panNumber": "ABCDE1012S",
+      "paymentMode": "Bank Transfer"
+    }
+  },
+  {
+    "id": 13,
+    "name": "Amit Singh",
+    "personal": {
+      "dateOfBirth": "30 January 1991",
+      "gender": "Male",
+      "maritalStatus": "Married",
+      "nationality": "Indian",
+      "bloodGroup": "O+",
+      "address": "31 Gomti Nagar Extension, Lucknow, Uttar Pradesh"
+    },
+    "contact": {
+      "email": "amit.singh13@example.com",
+      "phone": "+91 90013 10013",
+      "alternatePhone": "+91 90013 20013",
+      "address": "31 Gomti Nagar Extension, Lucknow, Uttar Pradesh",
+      "city": "Lucknow",
+      "state": "Uttar Pradesh",
+      "postalCode": "226030"
+    },
+    "nextOfKin": {
+      "name": "Poonam Singh",
+      "relationship": "Wife",
+      "phone": "+91 90013 30013",
+      "email": "poonam.singh@example.com",
+      "address": "31 Gomti Nagar Extension, Lucknow, Uttar Pradesh"
+    },
+    "education": {
+      "qualification": "Bachelor of Commerce",
+      "specialization": "Finance",
+      "institution": "University of Lucknow",
+      "yearOfCompletion": "2020",
+      "grade": "81%",
+      "type": "Full Time"
+    },
+    "family": [
+      {
+        "name": "Poonam Singh",
+        "relationship": "Wife",
+        "occupation": "School Teacher",
+        "phone": "+91 90013 30013"
+      },
+      {
+        "name": "Rajendra Singh",
+        "relationship": "Father",
+        "occupation": "Retired Police Officer",
+        "phone": "+91 90013 30014"
+      },
+      {
+        "name": "Anaya Singh",
+        "relationship": "Daughter",
+        "occupation": "Student",
+        "phone": "+91 90013 30015"
+      }
+    ],
+    "guarantor": {
+      "name": "Rajendra Singh",
+      "relationship": "Father",
+      "phone": "+91 90013 30014",
+      "occupation": "Retired Police Officer",
+      "address": "31 Gomti Nagar Extension, Lucknow, Uttar Pradesh"
+    },
+    "job": {
+      "department": "Finance",
+      "jobTitle": "Senior Accountant",
+      "category": "Full Time",
+      "employeeId": "EMP013",
+      "startDate": "06 January 2023",
+      "workLocation": "Lucknow",
+      "manager": "Sanjay Kapoor",
+      "employmentStatus": "Active"
+    },
+    "financial": {
+      "bankName": "Axis Bank",
+      "accountNumber": "XXXXXX1013",
+      "ifscCode": "UTIB0001013",
+      "accountType": "Salary Account",
+      "panNumber": "ABCDE1013T",
+      "paymentMode": "Bank Transfer"
+    }
+  },
+  {
+    "id": 14,
+    "name": "Pooja Kapoor",
+    "personal": {
+      "dateOfBirth": "15 May 1999",
+      "gender": "Female",
+      "maritalStatus": "Single",
+      "nationality": "Indian",
+      "bloodGroup": "AB+",
+      "address": "42 Sector 22, Chandigarh"
+    },
+    "contact": {
+      "email": "pooja.kapoor14@example.com",
+      "phone": "+91 90014 10014",
+      "alternatePhone": "+91 90014 20014",
+      "address": "42 Sector 22, Chandigarh",
+      "city": "Chandigarh",
+      "state": "Chandigarh",
+      "postalCode": "160022"
+    },
+    "nextOfKin": {
+      "name": "Rajiv Kapoor",
+      "relationship": "Father",
+      "phone": "+91 90014 30014",
+      "email": "rajiv.kapoor@example.com",
+      "address": "42 Sector 22, Chandigarh"
+    },
+    "education": {
+      "qualification": "Bachelor of Arts",
+      "specialization": "Mass Communication",
+      "institution": "Panjab University",
+      "yearOfCompletion": "2021",
+      "grade": "84%",
+      "type": "Full Time"
+    },
+    "family": [
+      {
+        "name": "Rajiv Kapoor",
+        "relationship": "Father",
+        "occupation": "Business Owner",
+        "phone": "+91 90014 30014"
+      },
+      {
+        "name": "Sunita Kapoor",
+        "relationship": "Mother",
+        "occupation": "Interior Designer",
+        "phone": "+91 90014 30015"
+      },
+      {
+        "name": "Riya Kapoor",
+        "relationship": "Sister",
+        "occupation": "Medical Student",
+        "phone": "+91 90014 30016"
+      }
+    ],
+    "guarantor": {
+      "name": "Rajiv Kapoor",
+      "relationship": "Father",
+      "phone": "+91 90014 30014",
+      "occupation": "Business Owner",
+      "address": "42 Sector 22, Chandigarh"
+    },
+    "job": {
+      "department": "Design & Marketing",
+      "jobTitle": "Marketing Specialist",
+      "category": "Full Time",
+      "employeeId": "EMP014",
+      "startDate": "19 October 2023",
+      "workLocation": "Chandigarh",
+      "manager": "Pooja Malhotra",
+      "employmentStatus": "Active"
+    },
+    "financial": {
+      "bankName": "ICICI Bank",
+      "accountNumber": "XXXXXX1014",
+      "ifscCode": "ICIC0001014",
+      "accountType": "Salary Account",
+      "panNumber": "ABCDE1014U",
+      "paymentMode": "Bank Transfer"
+    }
+  },
+  {
+    "id": 15,
+    "name": "Rohit Mehta",
+    "personal": {
+      "dateOfBirth": "07 March 1990",
+      "gender": "Male",
+      "maritalStatus": "Married",
+      "nationality": "Indian",
+      "bloodGroup": "A-",
+      "address": "56 Malviya Nagar, Jaipur, Rajasthan"
+    },
+    "contact": {
+      "email": "rohit.mehta15@example.com",
+      "phone": "+91 90015 10015",
+      "alternatePhone": "+91 90015 20015",
+      "address": "56 Malviya Nagar, Jaipur, Rajasthan",
+      "city": "Jaipur",
+      "state": "Rajasthan",
+      "postalCode": "302017"
+    },
+    "nextOfKin": {
+      "name": "Neha Mehta",
+      "relationship": "Wife",
+      "phone": "+91 90015 30015",
+      "email": "neha.mehta@example.com",
+      "address": "56 Malviya Nagar, Jaipur, Rajasthan"
+    },
+    "education": {
+      "qualification": "Master of Business Administration",
+      "specialization": "Operations Management",
+      "institution": "Indian Institute of Management Indore",
+      "yearOfCompletion": "2021",
+      "grade": "8.3 CGPA",
+      "type": "Full Time"
+    },
+    "family": [
+      {
+        "name": "Neha Mehta",
+        "relationship": "Wife",
+        "occupation": "Bank Officer",
+        "phone": "+91 90015 30015"
+      },
+      {
+        "name": "Prakash Mehta",
+        "relationship": "Father",
+        "occupation": "Retired Manager",
+        "phone": "+91 90015 30016"
+      },
+      {
+        "name": "Ishaan Mehta",
+        "relationship": "Son",
+        "occupation": "Student",
+        "phone": "+91 90015 30017"
+      }
+    ],
+    "guarantor": {
+      "name": "Prakash Mehta",
+      "relationship": "Father",
+      "phone": "+91 90015 30016",
+      "occupation": "Retired Manager",
+      "address": "56 Malviya Nagar, Jaipur, Rajasthan"
+    },
+    "job": {
+      "department": "Operations",
+      "jobTitle": "Operations Manager",
+      "category": "Full Time",
+      "employeeId": "EMP015",
+      "startDate": "14 February 2022",
+      "workLocation": "Jaipur",
+      "manager": "Rakesh Sharma",
+      "employmentStatus": "Active"
+    },
+    "financial": {
+      "bankName": "IDFC First Bank",
+      "accountNumber": "XXXXXX1015",
+      "ifscCode": "IDFB0001015",
+      "accountType": "Salary Account",
+      "panNumber": "ABCDE1015V",
+      "paymentMode": "Bank Transfer"
+    }
+  }
+]

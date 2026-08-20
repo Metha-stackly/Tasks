@@ -149,7 +149,10 @@
 
   font-weight: 700;
 }
-
+.sidebar-item {
+  text-decoration: none;
+  box-sizing: border-box;
+}
 .sidebar-icon {
   width: 17px;
 

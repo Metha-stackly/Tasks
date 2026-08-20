@@ -1,0 +1,463 @@
+.employee-profile-page {
+  min-height: 100vh;
+
+  padding: 28px 34px 50px;
+
+  background: #e8f1fc;
+
+  box-sizing: border-box;
+}
+
+/* ================================
+   BREADCRUMB
+================================ */
+
+.profile-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  margin-bottom: 20px;
+
+  color: #17213c;
+
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.profile-breadcrumb a {
+  color: #17213c;
+
+  text-decoration: none;
+}
+
+.profile-breadcrumb a:hover {
+  color: #243f91;
+}
+
+.profile-breadcrumb span {
+  color: #7c879c;
+}
+
+.profile-breadcrumb strong {
+  color: #17213c;
+}
+
+/* ================================
+   MAIN PROFILE LAYOUT
+================================ */
+
+.employee-profile-layout {
+  display: grid;
+
+  grid-template-columns: 188px minmax(0, 1fr);
+
+  gap: 12px;
+
+  max-width: 1100px;
+}
+
+/* ================================
+   LEFT PROFILE NAVIGATION
+================================ */
+
+.profile-navigation {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 9px;
+
+  padding: 7px;
+
+  background: #ffffff;
+
+  border-radius: 7px;
+
+  box-sizing: border-box;
+}
+
+.profile-nav-item {
+  width: 100%;
+
+  min-height: 42px;
+
+  padding: 10px 12px;
+
+  border: none;
+
+  border-radius: 7px;
+
+  background: #dce9f8;
+
+  color: #17213c;
+
+  font-size: 10px;
+  font-weight: 500;
+
+  text-align: center;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.15s ease;
+}
+
+.profile-nav-item:hover {
+  background: #d2e1f3;
+
+  transform: translateX(1px);
+}
+
+.profile-nav-item.active {
+  background: #ffbd16;
+
+  color: #17213c;
+
+  font-weight: 700;
+}
+
+/* ================================
+   PERSONAL DETAILS CARD
+================================ */
+
+.personal-details-card {
+  position: relative;
+
+  min-height: 440px;
+
+  padding: 42px 48px;
+
+  background: #ffffff;
+
+  border-radius: 7px;
+
+  box-sizing: border-box;
+}
+
+/* ================================
+   AVATAR
+================================ */
+
+.profile-avatar-large {
+  width: 82px;
+  height: 82px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto 18px;
+
+  border-radius: 50%;
+
+  background: #ffbd16;
+
+  color: #17213c;
+
+  font-size: 30px;
+  font-weight: 700;
+
+  border: 3px solid #f5f5f5;
+
+  box-sizing: border-box;
+}
+
+/* ================================
+   FIELDS
+================================ */
+
+.profile-field {
+  text-align: center;
+}
+
+.profile-field-label {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #8a94a8;
+
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.employee-name-field h1 {
+  margin: 0;
+
+  color: #111827;
+
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.department-field {
+  margin-top: 24px;
+}
+
+.department-field h2 {
+  margin: 0;
+
+  color: #111827;
+
+  font-size: 15px;
+  font-weight: 700;
+}
+
+/* ================================
+   JOB INFORMATION
+================================ */
+
+.profile-job-grid {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 50px;
+
+  max-width: 500px;
+
+  margin: 32px auto 0;
+}
+
+.profile-job-grid .profile-field {
+  text-align: center;
+}
+
+.profile-field strong {
+  display: block;
+
+  color: #111827;
+
+  font-size: 13px;
+  font-weight: 700;
+}
+
+/* ================================
+   BASIC INFORMATION
+================================ */
+
+.profile-basic-grid {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 50px;
+
+  max-width: 500px;
+
+  margin: 28px auto 0;
+
+  padding-top: 22px;
+
+  border-top: 1px solid #edf0f5;
+}
+
+/* ================================
+   NOT FOUND
+================================ */
+
+.profile-not-found {
+  width: 100%;
+  max-width: 600px;
+
+  margin: 80px auto;
+
+  padding: 40px;
+
+  background: #ffffff;
+
+  border-radius: 8px;
+
+  text-align: center;
+}
+
+.profile-not-found h1 {
+  margin: 0 0 20px;
+
+  color: #17213c;
+
+  font-size: 22px;
+}
+
+.profile-back-link {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  padding: 10px 16px;
+
+  border: 1px solid #d7dfeb;
+
+  border-radius: 6px;
+
+  background: #ffffff;
+
+  color: #243f91;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.profile-back-link:hover {
+  background: #f4f7fc;
+
+  border-color: #243f91;
+
+  box-shadow: 0 4px 10px rgba(36, 63, 145, 0.12);
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 900px) {
+
+  .employee-profile-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-navigation {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .personal-details-card {
+    padding: 35px 25px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .employee-profile-page {
+    padding: 20px 15px 40px;
+  }
+
+  .profile-navigation {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-job-grid,
+  .profile-basic-grid {
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+  }
+}
+.profile-placeholder {
+  min-height: 400px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+}
+
+.profile-placeholder h2 {
+  margin: 0 0 10px;
+
+  color: #17213c;
+
+  font-size: 20px;
+}
+
+.profile-placeholder p {
+  margin: 0;
+
+  color: #8a94a8;
+
+  font-size: 12px;
+}
+
+/* ================================
+   PROFILE DETAIL SECTIONS
+================================ */
+
+.profile-detail-section {
+  width: 100%;
+}
+
+.section-overline {
+  display: block;
+  margin-bottom: 8px;
+  color: #7d8eaa;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.profile-detail-section h2 {
+  margin: 0;
+  color: #10254a;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.section-description {
+  margin: 8px 0 32px;
+  color: #7d8eaa;
+  font-size: 16px;
+}
+
+.education-card {
+  width: 100%;
+  padding: 32px;
+  border: 1px solid #dce5f1;
+  border-radius: 14px;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+
+.education-card h3 {
+  margin: 0 0 24px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e2e8f0;
+  color: #10254a;
+  font-size: 23px;
+}
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px 60px;
+}
+
+.detail-grid > div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.detail-grid span {
+  color: #8a9ab2;
+  font-size: 15px;
+}
+
+.detail-grid strong {
+  color: #10254a;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
