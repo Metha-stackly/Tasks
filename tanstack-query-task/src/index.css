@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    padding: 30px;
+}
+
+.users-page {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Search and Refetch */
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.controls input {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.controls button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2563eb;
+    color: white;
+    cursor: pointer;
+}
+
+.controls button:hover {
+    background-color: #1d4ed8;
+}
+
+/* User cards */
+
+.users-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.user-card {
+    background-color: white;
+    padding: 18px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.user-card h3 {
+    margin-bottom: 10px;
+}
+
+.user-card p {
+    margin: 6px 0;
+    color: #555;
+}
