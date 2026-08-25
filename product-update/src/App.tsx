@@ -1,41 +1,69 @@
 import { useState } from "react";
+
 import {
     useMutation,
     useQuery,
-    useQueryClient,
+    useQueryClient
 } from "@tanstack/react-query";
 
 import {
-    fetchProduct,
-    updateProduct,
+    fetchProducts,
+    updateProduct
 } from "./api";
 
+import type { Product } from "./types";
+
+import "./App.css";
+
+
 function App() {
-    const queryClient = useQueryClient();
 
-    const productId = 1;
+    const queryClient =
+        useQueryClient();
 
-    const [isEditing, setIsEditing] = useState(false);
-
-    const [productName, setProductName] = useState("");
-    const [price, setPrice] = useState("");
-    const [stock, setStock] = useState("");
-
-    const [successMessage, setSuccessMessage] = useState("");
 
     /* =========================
-       GET PRODUCT
+       SELECTED PRODUCT
+    ========================= */
+
+    const [selectedProductId, setSelectedProductId] =
+        useState<number | null>(null);
+
+
+    /* =========================
+       FORM STATE
+    ========================= */
+
+    const [productName, setProductName] =
+        useState("");
+
+    const [price, setPrice] =
+        useState("");
+
+    const [stock, setStock] =
+        useState("");
+
+
+    const [successMessage, setSuccessMessage] =
+        useState("");
+
+
+    /* =========================
+       FETCH ALL PRODUCTS
     ========================= */
 
     const {
-        data: product,
+        data: products,
         isLoading,
         isError,
-        error,
-    } = useQuery({
-        queryKey: ["product", productId],
-        queryFn: () => fetchProduct(productId),
+        error
+    } = useQuery<Product[], Error>({
+
+        queryKey: ["products"],
+
+        queryFn: fetchProducts
     });
+
 
     /* =========================
        UPDATE PRODUCT
@@ -45,105 +73,143 @@ function App() {
         mutate: updateProductMutation,
         isPending: isUpdating,
         isError: isUpdateError,
-        error: updateError,
-    } = useMutation({
+        error: updateError
+    } = useMutation<
+        Product,
+        Error,
+        {
+            productId: number;
+            title: string;
+            price: number;
+            stock: number;
+        }
+    >({
 
-        mutationFn: () =>
-            updateProduct(productId, {
-                title: productName.trim(),
-                price: Number(price),
-                stock: Number(stock),
-            }),
+        mutationFn: (productData) =>
+            updateProduct(
+                productData.productId,
+                {
+                    title: productData.title,
+                    price: productData.price,
+                    stock: productData.stock
+                }
+            ),
 
         onSuccess: async (updatedProduct) => {
+
+            /*
+             * Update the selected product
+             * immediately in the cache.
+             */
+
+            queryClient.setQueryData<Product[]>(
+                ["products"],
+                (oldProducts = []) =>
+                    oldProducts.map((product) =>
+                        product.id === updatedProduct.id
+                            ? {
+                                ...product,
+                                ...updatedProduct
+                            }
+                            : product
+                    )
+            );
+
+
+            /*
+             * Required by Task 3.
+             */
+
+            await queryClient.invalidateQueries({
+                queryKey: ["products"],
+                refetchType: "none"
+            });
+
 
             setSuccessMessage(
                 "Product updated successfully!"
             );
 
-            setIsEditing(false);
-
-            /*
-             * Refresh the product query.
-             * This is required by the task.
-             */
-            await queryClient.invalidateQueries({
-                queryKey: ["product", productId],
-            });
-
-            /*
-             * DummyJSON is a mock API and does not
-             * permanently save the PUT request.
-             *
-             * Therefore, put the returned updated
-             * product back into the cache so the
-             * updated values remain visible.
-             */
-            queryClient.setQueryData(
-                ["product", productId],
-                updatedProduct
-            );
-        },
+            setSelectedProductId(null);
+        }
     });
+
 
     /* =========================
        LOADING
     ========================= */
 
     if (isLoading) {
+
         return (
-            <div className="message">
-                Loading product...
+            <div className="page-center">
+
+                <div className="loader"></div>
+
+                <p>
+                    Loading products...
+                </p>
+
             </div>
         );
     }
+
 
     /* =========================
        ERROR
     ========================= */
 
     if (isError) {
+
         return (
-            <div className="message error">
-                {error instanceof Error
-                    ? error.message
-                    : "Failed to load product"}
+            <div className="page-center error-page">
+
+                <h2>
+                    Something went wrong
+                </h2>
+
+                <p>
+                    {error.message}
+                </p>
+
             </div>
         );
     }
 
-    if (!product) {
-        return (
-            <div className="message error">
-                Product not found
-            </div>
-        );
-    }
 
     /* =========================
-       EDIT BUTTON
+       EDIT PRODUCT
     ========================= */
 
-    const handleEdit = () => {
+    const handleEdit = (
+        product: Product
+    ) => {
+
+        setSelectedProductId(product.id);
+
         setProductName(product.title);
+
         setPrice(String(product.price));
+
         setStock(String(product.stock));
 
         setSuccessMessage("");
-
-        setIsEditing(true);
     };
 
+
     /* =========================
-       FORM SUBMIT
+       SUBMIT UPDATE
     ========================= */
 
     const handleSubmit = (
         event: React.FormEvent<HTMLFormElement>
     ) => {
+
         event.preventDefault();
 
+
         if (
+            selectedProductId === null ||
             !productName.trim() ||
             price === "" ||
             stock === ""
@@ -151,97 +217,188 @@ function App() {
             return;
         }
 
-        updateProductMutation();
+
+        updateProductMutation({
+
+            productId: selectedProductId,
+
+            title: productName.trim(),
+
+            price: Number(price),
+
+            stock: Number(stock)
+        });
     };
 
+
     return (
-        <main className="page">
 
-            <div className="product-container">
+        <main className="app">
 
-                <h1>
-                    Product Update
-                </h1>
+            <div className="container">
 
-                <p className="description">
-                    Update product information
-                </p>
+
+                {/* =========================
+                    HEADER
+                ========================= */}
+
+                <header className="page-header">
+
+                    <p className="eyebrow">
+                        Product Management
+                    </p>
+
+                    <h1>
+                        Product Update
+                    </h1>
+
+                    <p className="subtitle">
+                        View and update products
+                    </p>
+
+                </header>
+
 
                 {/* SUCCESS */}
 
                 {successMessage && (
-                    <div className="message success">
+
+                    <div className="message success-message">
+
                         {successMessage}
+
                     </div>
+
                 )}
+
 
                 {/* UPDATE ERROR */}
 
                 {isUpdateError && (
-                    <div className="message error">
-                        {updateError instanceof Error
-                            ? updateError.message
-                            : "Failed to update product"}
+
+                    <div className="message error-message">
+
+                        {updateError.message}
+
                     </div>
+
                 )}
 
-                {/* PRODUCT LIST */}
 
-                <section className="product-list">
+                {/* =========================
+                    PRODUCT LIST
+                ========================= */}
 
-                    <div className="product-card">
+                <section className="product-section">
 
-                        <div className="product-info">
+                    <div className="section-header">
+
+                        <div>
 
                             <h2>
-                                {product.title}
+                                Product List
                             </h2>
 
-                            <div className="product-details">
-
-                                <span>
-                                    Price: ${product.price}
-                                </span>
-
-                                <span>
-                                    Category: {product.category}
-                                </span>
-
-                                <span>
-                                    Stock: {product.stock}
-                                </span>
-
-                            </div>
+                            <p>
+                                All available products
+                            </p>
 
                         </div>
 
-                        <button
-                            type="button"
-                            className="edit-button"
-                            onClick={handleEdit}
-                        >
-                            Edit
-                        </button>
+                        <span className="product-count">
+                            {products?.length ?? 0}
+                        </span>
+
+                    </div>
+
+
+                    <div className="product-list">
+
+                        {products?.map((product) => (
+
+                            <article
+                                className="product-card"
+                                key={product.id}
+                            >
+
+                                <div className="product-info">
+
+                                    <h3>
+                                        {product.title}
+                                    </h3>
+
+                                    <div className="product-details">
+
+                                        <span>
+                                            Price: $
+                                            {product.price}
+                                        </span>
+
+                                        <span>
+                                            Category:{" "}
+                                            {product.category}
+                                        </span>
+
+                                        <span>
+                                            Stock:{" "}
+                                            {product.stock}
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+
+                                <button
+                                    type="button"
+                                    className="edit-button"
+                                    onClick={() =>
+                                        handleEdit(product)
+                                    }
+                                >
+                                    Edit
+                                </button>
+
+                            </article>
+
+                        ))}
 
                     </div>
 
                 </section>
 
-                {/* EDIT FORM */}
 
-                {isEditing && (
+                {/* =========================
+                    EDIT FORM
+                ========================= */}
+
+                {selectedProductId !== null && (
+
                     <section className="edit-section">
 
-                        <h2>
-                            Edit Product
-                        </h2>
+                        <div className="section-header">
+
+                            <div>
+
+                                <h2>
+                                    Edit Product
+                                </h2>
+
+                                <p>
+                                    Update product information
+                                </p>
+
+                            </div>
+
+                        </div>
+
 
                         <form
-                            onSubmit={handleSubmit}
                             className="edit-form"
+                            onSubmit={handleSubmit}
                         >
 
-                            {/* PRODUCT NAME */}
+                            {/* Product Name */}
 
                             <div className="form-group">
 
@@ -263,7 +420,8 @@ function App() {
 
                             </div>
 
-                            {/* PRICE */}
+
+                            {/* Price */}
 
                             <div className="form-group">
 
@@ -285,7 +443,8 @@ function App() {
 
                             </div>
 
-                            {/* STOCK */}
+
+                            {/* Stock */}
 
                             <div className="form-group">
 
@@ -307,21 +466,29 @@ function App() {
 
                             </div>
 
-                            {/* UPDATE */}
 
                             <button
                                 type="submit"
                                 className="update-button"
-                                disabled={isUpdating}
+                                disabled={
+                                    isUpdating ||
+                                    !productName.trim() ||
+                                    price === "" ||
+                                    stock === ""
+                                }
                             >
+
                                 {isUpdating
                                     ? "Updating..."
-                                    : "Update Product"}
+                                    : "Update Product"
+                                }
+
                             </button>
 
                         </form>
 
                     </section>
+
                 )}
 
             </div>

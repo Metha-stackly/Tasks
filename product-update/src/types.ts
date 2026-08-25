@@ -5,3 +5,10 @@ export interface Product {
     category: string;
     stock: number;
 }
+
+export interface ProductsResponse {
+    products: Product[];
+    total: number;
+    skip: number;
+    limit: number;
+}

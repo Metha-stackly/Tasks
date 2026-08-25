@@ -1,18 +1,38 @@
-import type { Product } from "./types";
+import type {
+    Product,
+    ProductsResponse
+} from "./types";
 
-export async function fetchProduct(
-    productId: number
-): Promise<Product> {
+const PRODUCTS_API =
+    "https://dummyjson.com/products";
+
+
+/* =========================
+   FETCH 15 PRODUCTS
+========================= */
+
+export async function fetchProducts(): Promise<Product[]> {
+
     const response = await fetch(
-        `https://dummyjson.com/products/${productId}`
+        `${PRODUCTS_API}?limit=15`
     );
 
     if (!response.ok) {
-        throw new Error("Failed to fetch product");
+        throw new Error(
+            "Failed to fetch products"
+        );
     }
 
-    return response.json();
+    const data: ProductsResponse =
+        await response.json();
+
+    return data.products;
 }
+
+
+/* =========================
+   UPDATE PRODUCT
+========================= */
 
 export async function updateProduct(
     productId: number,
@@ -22,20 +42,28 @@ export async function updateProduct(
         stock: number;
     }
 ): Promise<Product> {
+
     const response = await fetch(
-        `https://dummyjson.com/products/${productId}`,
+        `${PRODUCTS_API}/${productId}`,
         {
             method: "PUT",
+
             headers: {
-                "Content-Type": "application/json",
+                "Content-Type": "application/json"
             },
-            body: JSON.stringify(product),
+
+            body: JSON.stringify(product)
         }
     );
 
     if (!response.ok) {
-        throw new Error("Failed to update product");
+        throw new Error(
+            "Failed to update product"
+        );
     }
 
-    return response.json();
+    const data: Product =
+        await response.json();
+
+    return data;
 }
