@@ -590,10 +590,9 @@ function Tenants() {
 
                                     <div className="tenant-main">
 
-                                        <div className="tenant-avatar large">
-                                            T
-                                        </div>
-
+                                        <div className="tenant-avatar">
+                                                 {tenant.name.charAt(0).toUpperCase()}
+                                            </div>
 
                                         <div>
 
