@@ -18,35 +18,21 @@ export const Pagination: React.FC<PaginationProps> = ({
 
   const pages = Array.from({ length: totalPages }, (_, i) => i + 1);
 
-  return (
-  <div className="flex flex-col px-4 py-3 bg-white border-t border-slate-200 sm:px-6 rounded-b-xl">
+return (
+  <div className="flex flex-col items-center px-4 py-3 bg-white border-t border-slate-200 sm:px-6 rounded-b-xl">
+    
+    {/* Pagination buttons - centered */}
+    <div className="flex items-center space-x-1">
+      <button
+        onClick={() => onPageChange(currentPage - 1)}
+        disabled={currentPage === 1 || isFetching}
+        className="inline-flex items-center px-3 py-1.5 text-xs font-medium text-slate-600 bg-slate-50 border border-slate-300 rounded-lg hover:bg-slate-100 disabled:opacity-40 disabled:cursor-not-allowed transition-colors cursor-pointer"
+      >
+        <ChevronLeft className="w-3.5 h-3.5 mr-1" />
+        Previous
+      </button>
 
-    {/* Centered pagination section */}
-    <div className="flex flex-col items-center">
-      <div className="flex items-center space-x-1">
-
-        <button
-          onClick={() => onPageChange(currentPage - 1)}
-          disabled={currentPage === 1 || isFetching}
-          className="inline-flex items-center px-3 py-1.5 text-xs font-medium text-slate-600 bg-slate-50 border border-slate-300 rounded-lg hover:bg-slate-100 disabled:opacity-40 disabled:cursor-not-allowed transition-colors cursor-pointer"
-        >
-          <ChevronLeft className="w-3.5 h-3.5 mr-1" />
-          Previous
-        </button>
-
-        <button
-          onClick={() => onPageChange(currentPage + 1)}
-          disabled={currentPage === totalPages || isFetching}
-          className="inline-flex items-center px-3 py-1.5 text-xs font-medium text-slate-600 bg-slate-50 border border-slate-300 rounded-lg hover:bg-slate-100 disabled:opacity-40 disabled:cursor-not-allowed transition-colors cursor-pointer"
-        >
-          Next
-          <ChevronRight className="w-3.5 h-3.5 ml-1" />
-        </button>
-
-      </div>
-
-      {/* Page numbers below */}
-      <div className="hidden sm:flex items-center space-x-1 mt-3">
+      <div className="hidden sm:flex items-center space-x-1">
         {pages.map((p) => {
           const isActive = p === currentPage;
 
@@ -66,13 +52,28 @@ export const Pagination: React.FC<PaginationProps> = ({
           );
         })}
       </div>
+
+      <button
+        onClick={() => onPageChange(currentPage + 1)}
+        disabled={currentPage === totalPages || isFetching}
+        className="inline-flex items-center px-3 py-1.5 text-xs font-medium text-slate-600 bg-slate-50 border border-slate-300 rounded-lg hover:bg-slate-100 disabled:opacity-40 disabled:cursor-not-allowed transition-colors cursor-pointer"
+      >
+        Next
+        <ChevronRight className="w-3.5 h-3.5 ml-1" />
+      </button>
     </div>
 
-    {/* Page info - bottom left */}
-    <div className="w-full flex items-center space-x-2 text-xs text-slate-500 mt-3">
+    {/* Page information - below pagination */}
+    <div className="mt-2 flex items-center space-x-2 text-xs text-slate-500">
       <span>
-        Page <strong className="text-slate-800 font-semibold">{currentPage}</strong> of{' '}
-        <strong className="text-slate-800 font-semibold">{totalPages}</strong>
+        Page{' '}
+        <strong className="text-slate-800 font-semibold">
+          {currentPage}
+        </strong>{' '}
+        of{' '}
+        <strong className="text-slate-800 font-semibold">
+          {totalPages}
+        </strong>
       </span>
 
       {isFetching && (
@@ -83,6 +84,5 @@ export const Pagination: React.FC<PaginationProps> = ({
     </div>
 
   </div>
-
-  );
+);
 };
