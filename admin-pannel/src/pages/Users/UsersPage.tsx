@@ -132,7 +132,7 @@ export const UsersPage: React.FC = () => {
             className="inline-flex items-center space-x-1.5 px-4 py-2 bg-[#f59e0b] hover:bg-[#d97706] text-[#0a1128] text-xs font-bold rounded-xl shadow-xs transition-all cursor-pointer"
           >
             <UserPlus className="w-4 h-4" />
-            <span>+ Create User</span>
+            <span>Create User</span>
           </button>
         </div>
       </div>
